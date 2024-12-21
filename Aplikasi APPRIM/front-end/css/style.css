@@ -1,0 +1,310 @@
+/* Reset dasar untuk body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+button .button {
+    background-color: #0077B5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+
+/* Style untuk header */
+.header {
+    background-color: #0077B5;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    justify-content: space-between; /* Elemen kiri & kanan berjauhan */
+}
+
+/* Kiri: Logo + Navigasi */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Gaya logo */
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Navigasi kiri */
+.nav-left {
+    display: flex;
+    gap: 20px; /* Jarak antar menu */
+}
+
+.nav-left a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Kanan: LOG OUT + Bell */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara logout dan bell */
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Icon bell */
+.header-right ion-icon {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Hover efek pada link */
+.header a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 100px 20px; /* Tambahkan padding atas untuk menghindari overlap dengan header */
+}
+.content h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px; /* Tambahkan jarak bawah */
+}
+
+.bell{
+    margin-right: 40px;
+}
+
+/* ...........................................gedung.................................. */
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.box img {
+    width: 300px;
+    height: 200px;
+    border-radius:20px ;
+    float: left;
+    margin: 20px;
+}
+.box .detail-box {
+    padding: 20px;
+    flex: 1;
+}
+.box .detail-box h2 {
+    margin-top: 0;
+    font-weight: bold;
+    text-align: center;
+}
+.box .detail-box p {
+    margin: 10px 0;
+}
+.box .detail-box button {
+    background-color: #0077B5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    
+}
+
+.detail-box {
+    float: right;
+}
+
+/*............................Pesanan Sukses............................*/
+
+.content-pesanan {
+    text-align: center;
+    padding: 60px;
+}
+
+.outer-card {
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    border: 2px solid #000 ;
+}
+.card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #D9D9D9;
+    display: inline-block;
+    padding: 20px;
+    text-align: left;
+    width: 80%;
+    max-width: 800px;
+
+}
+.card img {
+    width: 100px;
+    height: 130px;
+    border-radius: 10px;
+    margin-right: 20px;
+    vertical-align: top;
+}
+.card .details {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 140px);
+    text-align: left;
+}
+.card .details h2 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+.card .details p {
+    margin: 5px 0;
+}
+.info {
+    background-color: #2A88D0;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.info p {
+    margin: 5px 0;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0077B5;
+    padding: 20px;
+}
+.left-section, .right-section {
+    color: white;
+}
+.left-section {
+    display: flex;
+    align-items: center;
+}
+.left-section img {
+    width: 150px;
+    height: auto;
+    margin-right: 0px;
+}
+.left-section div {
+    line-height: 1.5;
+    margin-left: 2cm; /* Added margin to move text 3 cm to the right */
+}
+.left-section div b {
+    display: block;
+    margin-bottom: 5px;
+}
+.right-section {
+    text-align: left;
+    margin: 0 auto;
+}
+.right-section b {
+    display: block;
+    margin-bottom: 5px;
+}
+.room-code {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.buttons button {
+    background-color: #0077B5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*.............................Ruangan................................*/
+
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.room-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.room-body {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+.room-body img {
+    width: 100%;
+    border-radius: 10px;
+}
+.room-body h3 {
+    margin: 10px 0;
+}
+.room-body p {
+    text-align: left;
+    margin: 5px 0;
+}
+.room-body .status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.room-body .status .closed {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.room-body .status .open {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.room-body .status button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
